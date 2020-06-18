@@ -1,4 +1,4 @@
-language: node_js
+language: python
 
 services:
   - docker
@@ -9,5 +9,6 @@ cache:
   directories:
     - node_modules
 script: 
+    - nvm install v12.18.0
     - npm install -g serverless
     - sls deploy
