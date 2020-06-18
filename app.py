@@ -1,14 +1,14 @@
 # app.py
 
-from flask import Flask
+from flask import Flask, jsonify
 
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return jsonify({"body": "Hello World", "statusCode": 200})
 
 @app.route("/<name>")
 def name(name):
-    return f"Hello {name.capitalize()}"
+    return jsonify({"body": f"Hello {name}", "statusCode": 200})
