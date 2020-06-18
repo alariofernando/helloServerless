@@ -11,4 +11,4 @@ def hello():
 
 @app.route("/<name>")
 def name(name):
-    return jsonify({"body": f"Hello {name}", "statusCode": 200})
+    return jsonify({"body": f"Hello {name.capitalize()}", "statusCode": 200})
