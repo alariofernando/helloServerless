@@ -24,4 +24,6 @@ functions:
     handler: wsgi.handler
     events:
       - http: ANY /
+          cors: true # <-- CORS!
       - http: 'ANY {proxy+}'
+          cors: true # <-- CORS!

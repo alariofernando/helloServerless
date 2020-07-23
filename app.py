@@ -12,7 +12,8 @@ def hello():
         "headers": {
             'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'},
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+            },
         "statusCode": 200
         })
 
@@ -23,6 +24,7 @@ def name(name):
         "headers": {
             'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'},
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+            },
         "statusCode": 200
         })
