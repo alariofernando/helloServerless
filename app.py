@@ -13,4 +13,6 @@ def hello():
         body = f"O nome que você colocou é {name}"
     else:
         body = "Você não colocou nenhum nome ;-;"
+    
+    print(body)
     return body
